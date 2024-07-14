@@ -1,13 +1,12 @@
 from setuptools import setup, find_packages
 
-# Lee el contenido de tu README.md
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="xvideos-py",
     version="0.1.0",
-    description="A powerful scraper for xvideos.com",
+    description="A powerful Python library to scrape xvideos.com",
     author="OSintt",
     author_email="akumagamer123@gmail.com",
     url="https://github.com/OSintt/xvideos.py",

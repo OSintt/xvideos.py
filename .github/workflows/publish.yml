@@ -8,6 +8,11 @@ jobs:
   pypi-publish:
     name: Publish release to PyPI
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/<PYPI_PACKAGE_NAME>
+    permissions:
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -22,9 +27,7 @@ jobs:
         run: |
           python setup.py sdist bdist_wheel
       - name: Publish package distributions to PyPI
-        uses: pypa/gh-action-pypi-publish@v1
+        uses: pypa/gh-action-pypi-publish@v1.9.0
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
-
-
 
