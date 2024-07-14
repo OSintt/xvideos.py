@@ -1,5 +1,9 @@
 from setuptools import setup, find_packages
 
+# Lee el contenido de tu README.md
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name="xvideos-py",
     version="0.1.0",
@@ -27,4 +31,6 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
 )

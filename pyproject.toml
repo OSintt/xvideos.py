@@ -1,5 +1,5 @@
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["setuptools", "wheel", "poetry-core>=1.0.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.poetry]
@@ -17,9 +17,9 @@ beautifulsoup4 = "^4.0"
 [tool.poetry.dev-dependencies]
 pytest = "^6.0"
 
-[tool.poetry.scripts]
-xvideos = 'src.main:main'
-
 [tool.poetry.extras]
 dev = ["pytest"]
+
+[tool.poetry.scripts]
+xvideos = 'src.main:main'
 
