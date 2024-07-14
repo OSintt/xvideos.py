@@ -1,4 +1,4 @@
-from videos import FreshScraper, SearchScraper, VerifiedScraper
+from .videos import FreshScraper, SearchScraper, VerifiedScraper
 
     
 def page_validator(func):
