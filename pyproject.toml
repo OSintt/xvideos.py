@@ -7,6 +7,7 @@ name = "xvideos-py"
 version = "0.1.0"
 description = "A powerful Python library to scrape xvideos.com"
 authors = ["OSintt <akumagamer123@gmail.com>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.6"
@@ -20,10 +21,10 @@ pytest = "^6.0"
 requires = ["poetry-core>=1.0.0"]
 
 [tool.poetry.scripts]
-xvideos = 'scraper.main:main'
+xvideos = 'src.main:main'
 
 [tool.poetry.extras]
 dev = ["pytest"]
 
 [tool.poetry.scripts]
-xvideos = 'scraper.main:main'
+xvideos = 'src.main:main'
