@@ -12,7 +12,7 @@ $ pip install xvideos-py
 ### 🍒 Importing the Library
 
 ```python
-from xvideos_wrapper import XVideos
+from xvideos import XVideos
 ```
 
 ### 🍒 Retrieve Fresh Videos
@@ -21,7 +21,7 @@ from xvideos_wrapper import XVideos
 xvideos = XVideos()
 
 # Retrieve fresh videos from the first page
-fresh = scraper.fresh(page=1)
+fresh = xvideos.fresh(page=1)
 
 # Log details of the retrieved videos
 print(fresh['videos'])  # List of video objects with properties like url, path, title, duration, profile, views
