@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.poetry]
 name = "xvideos-py"
-version = "0.1.4"
+version = "0.1.5"
 description = "A powerful Python library to scrape xvideos.com"
 authors = ["OSintt <akumagamer123@gmail.com>"]
 readme = "README.md"
