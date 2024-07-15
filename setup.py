@@ -5,13 +5,15 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="xvideos-py",
-    version="0.1.0",
+    version="0.1.2",
     description="A powerful Python library to scrape xvideos.com",
     author="OSintt",
     author_email="akumagamer123@gmail.com",
     url="https://github.com/OSintt/xvideos.py",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
+    packages=find_packages(),
+    package_data={
+        'xvideos': ['videos/base/config/config.json'],
+    },
     install_requires=[
         "beautifulsoup4",
         "requests",
@@ -21,7 +23,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'xvideos=xvideos_py.main:main',
+            'xvideos=xvideos.main:main',
         ],
     },
     classifiers=[
