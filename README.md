@@ -1,5 +1,3 @@
-Here's how you can update your `README.md` to include the details and download functions for your `xvideos-py` library.
-
 ### Updated `README.md`
 
 ```markdown
