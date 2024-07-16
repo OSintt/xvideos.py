@@ -4,15 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [tool.poetry]
 name = "xvideos-py"
-version = "0.1.6"
+version = "0.1.9"
 description = "A powerful Python library to scrape xvideos.com"
 authors = ["OSintt <akumagamer123@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.6"
-requests = "^2.0"
-beautifulsoup4 = "^4.0"
+python = "^3.10"  
+requests = "^2.32.3"  
+beautifulsoup4 = "^4.12.3"
+playwright = "^1.45.0"  
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0"

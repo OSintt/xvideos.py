@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="xvideos-py",
-    version="0.1.6",
+    version="0.1.9",
     description="A powerful Python library to scrape xvideos.com",
     author="OSintt",
     author_email="akumagamer123@gmail.com",
@@ -17,6 +17,7 @@ setup(
     install_requires=[
         "beautifulsoup4",
         "requests",
+        "playwright"
     ],
     tests_require=[
         "pytest",

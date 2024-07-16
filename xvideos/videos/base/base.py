@@ -15,5 +15,4 @@ class BaseScraper():
     def get_soup(self, endpoint: str, params: dict) -> BeautifulSoup:
         full_url = urljoin(self.base_url, endpoint)
         response = requests.get(full_url, params=params)
-        print(response.url)
         return BeautifulSoup(response.text, 'html.parser')

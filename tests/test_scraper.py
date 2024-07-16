@@ -50,4 +50,15 @@ def test_search_without_page(scraper):
     result = scraper.search(k="example", sort="relevance")
     assert 'pagination' in result
 
+def test_details_with_invalid_url(scraper):
+    invalid_url = 'https://invalidsite.com/video'
+    with pytest.raises(ValueError):
+        scraper.details(invalid_url)
 
+def test_details_with_valid_url(scraper):
+    valid_url = 'https://www.xvideos.com/video.udefpih987f/mi_madrastra_perdio_apuesta_en_final_argentina_vs_colombia_y_me_lo_chupa'
+    details = scraper.details(valid_url)
+    assert 'title' in details
+    assert 'url' in details
+    assert 'views' in details
+    assert 'image' in details

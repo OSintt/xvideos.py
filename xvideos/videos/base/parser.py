@@ -114,5 +114,4 @@ def parse_video(video):
             'views': views,
         }
     except ValueError as e:
-        print(f"Error parsing video: {e}")
-        return None
+        raise ValueError(f"Error parsing video: {e}")
