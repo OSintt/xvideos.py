@@ -1,6 +1,3 @@
-### Updated `README.md`
-
-```markdown
 # xvideos-py
 A powerful Python library to scrape xvideos.com.
 
